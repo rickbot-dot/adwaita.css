@@ -5,7 +5,6 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      label: Requirements
       value: |
         **Read this before reporting bugs!**
         
@@ -15,10 +14,17 @@ body:
         are targeting the real, vanilla Adwaita.CSS (do not submit this issue if you are
         using a fork).
   - type: textarea
-    id: what-happened
+    id: what-should-happen
     attributes:
       label: Expected behaviour
-      placeholder: What did you expect to see? 
+      placeholder: What did you expect to get? 
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Actual behaviour
+      placeholder: What did you get instead? 
     validations:
       required: true
   - type: textarea
@@ -26,6 +32,8 @@ body:
     attributes:
       label: Version
       description: What version of AdwaitaCSS is your HTML targeting?
+      placeholder: If you are targeting a specific Git commit, please enter it.
+      render: text
     validations:
       required: true
   - type: dropdown

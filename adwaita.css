@@ -1,16 +1,10 @@
- /***********************************************************/
-/*        Adwaita.CSS: GNOME-like styling for HTML           */
-/*                                                           */
-/*     This software comes with absolutely no warranty.      */
-/*      MIT License: See the LICENSE file for details.       */
-/*                                                           */
-/*        Please report bugs at the following page:          */
-/*     https://github.com/TylerMS887/adwaita.css/issues      */
- /***********************************************************/
-
-/* GNOME default font from Google API */
+/* GNOME default font and Red Hat Mono from Google API */
 
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+code, pre {
+  font-family: "Red Hat Mono";
+}
 
 /* Apply font, padding, other HTML body patches */
 

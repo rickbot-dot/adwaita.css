@@ -46,3 +46,8 @@ body:
         - Chromium-based (Chrome/Edge/etc.)
         - Opera
         - Safari
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to Adwaita.CSS!

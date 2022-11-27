@@ -10,6 +10,16 @@ desktop.
 
 ## Install
 
+### Release
+
+Add the following to your HTML `<head>`:
+
+```html
+<style>@import url("https://raw.githubusercontent.com/TylerMS887/adwaita.css/latest/adwaita.css")</style>
+```
+
+### Development
+
 Add the following to your HTML `<head>`:
 
 ```html

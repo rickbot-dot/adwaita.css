@@ -6,17 +6,14 @@ to see results.**
 A stylesheet that makes native HTML elements look like they came straight from the GNOME
 desktop.
 
-[Bug reports/missing elements/etc.](https://github.com/TylerMS887/adwaita.css/issues)
+[Bug reports/missing elements/etc](https://github.com/TylerMS887/adwaita.css/issues)
 
 ## Install
 
 ### Release
 
-Add the following to your HTML `<head>`:
-
-```html
-<style>@import url("https://raw.githubusercontent.com/TylerMS887/adwaita.css/prod/adwaita.css")</style>
-```
+See [Releases](https://github.com/TylerMS887/adwaita.css/releases) and copy the CSS for the
+release you would like to install.
 
 ### Development
 

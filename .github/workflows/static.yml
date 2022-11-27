@@ -2,12 +2,8 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the branch designed for imports
   push:
-    branches: ["import"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches: ["prod"]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:

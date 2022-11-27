@@ -1,1 +1,11 @@
-
+name: Missing Element
+description: Request an unstyled element to be added to the stylesheet
+labels: "enhancement"
+body:
+- type: input
+  id: prevalence
+  attributes:
+    label: Element
+    description: "Which element is not styled?"
+  validations:
+    required: true

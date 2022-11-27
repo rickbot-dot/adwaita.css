@@ -33,7 +33,6 @@ jobs:
              Will update the `prod` branch (production branch designed for importing) to use
              the current release contents.
           CONTENT_COMPARISON: true
-          REVIEWERS: "['${{ github.repository_owner }}']"
   deploy:
     name: Deploy to GH Pages
     environment:

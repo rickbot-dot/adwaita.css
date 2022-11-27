@@ -33,7 +33,7 @@ jobs:
           PULL_REQUEST_BODY: |
              Will update the `prod` branch (production branch designed for importing) to use
              the current release contents.
-          CONTENT_COMPARISON: true
+          CONTENT_COMPARISON: false
           REVIEWERS: '[]'
   deploy:
     name: Deploy to GH Pages

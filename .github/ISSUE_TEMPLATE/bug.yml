@@ -1,0 +1,40 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      label: Requirements
+      value: |
+        **Read this before reporting bugs!**
+        
+        Please search for existing issues before you submit this one.
+        
+        Only submit bugs if they seem to be in the actual Adwaita.CSS. Ensure you
+        are targeting the real, vanilla Adwaita.CSS (do not submit this issue if you are
+        using a fork).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Expected behaviour
+      placeholder: What did you expect to see? 
+    validations:
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: Version
+      description: What version of AdwaitaCSS is your HTML targeting?
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Which browser(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chromium-based (Chrome/Edge/etc.)
+        - Opera
+        - Safari

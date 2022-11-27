@@ -12,8 +12,7 @@ desktop.
 
 ### Release
 
-See [Releases](https://github.com/TylerMS887/adwaita.css/releases) and copy the CSS for the
-release you would like to install.
+See [Releases](https://github.com/TylerMS887/adwaita.css/releases) for instructions.
 
 ### Development
 

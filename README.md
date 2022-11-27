@@ -13,5 +13,5 @@ desktop.
 Add the following to your HTML `<head>`:
 
 ```html
-<style>@import url("https://raw.githubusercontent.com/TylerMS887/adwaita.css/import/adwaita.css")</style>
+<style>@import url("https://raw.githubusercontent.com/TylerMS887/adwaita.css/main/adwaita.css")</style>
 ```

@@ -1,6 +1,5 @@
 name: Bug Report
 description: File a bug report
-title: ""
 labels: ["bug"]
 body:
   - type: markdown
@@ -27,13 +26,11 @@ body:
       placeholder: What did you get instead? 
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: version
     attributes:
       label: Version
-      description: What version of AdwaitaCSS is your HTML targeting?
-      placeholder: If you are targeting a specific Git commit, please enter it.
-      render: text
+      placeholder: What version of AdwaitaCSS is your HTML targeting? If you are targeting a specific Git commit, please enter it.
     validations:
       required: true
   - type: dropdown

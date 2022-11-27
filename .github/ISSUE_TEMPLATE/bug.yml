@@ -9,9 +9,7 @@ body:
         
         Please search for existing issues before you submit this one.
         
-        Only submit bugs if they seem to be in the actual Adwaita.CSS. Ensure you
-        are targeting the real, vanilla Adwaita.CSS (do not submit this issue if you are
-        using a fork).
+        Only submit bugs if they seem to be in the actual Adwaita.CSS. Ensure you are targeting the real, vanilla Adwaita.CSS (do not submit this issue if you are using a fork).
   - type: textarea
     id: what-should-happen
     attributes:
@@ -30,7 +28,7 @@ body:
     id: version
     attributes:
       label: Version
-      placeholder: What version of AdwaitaCSS is your HTML targeting? If you are targeting a specific Git commit, please enter it.
+      description: What version of AdwaitaCSS is your HTML targeting? If you are targeting a specific Git commit, please enter it.
     validations:
       required: true
   - type: dropdown
@@ -43,8 +41,3 @@ body:
         - Chromium-based (Chrome/Edge/etc.)
         - Opera
         - Safari
-
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for contributing to Adwaita.CSS!

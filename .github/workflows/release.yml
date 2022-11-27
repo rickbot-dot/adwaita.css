@@ -21,20 +21,17 @@ jobs:
     name: Create Pull Request
     runs-on: ubuntu-latest
     steps:
-      - name: Sync branches
+      - name: Sync Branch
         # You may pin to the exact commit or the version.
-        # uses: TreTuna/sync-branches@ea58ab6e406fd3ad016a064b31270bbb41127f41
-        uses: TreTuna/sync-branches@1.4.0
+        # uses: connor-baer/action-sync-branch@3d55a053fbea05b71050bc26c9c37913981bd8b5
+        uses: connor-baer/action-sync-branch@v1.0.3
         with:
-          GITHUB_TOKEN: ${{ github.token }}
-          FROM_BRANCH: main
-          TO_BRANCH: prod
-          PULL_REQUEST_TITLE: Sync development branch to production
-          PULL_REQUEST_BODY: |
-             Will update the `prod` branch (production branch designed for importing) to use
-             the current release contents.
-          CONTENT_COMPARISON: false
-          REVIEWERS: '[]'
+          # The name of the branch to sync with the current branch.
+          branch: prod
+          # A GitHub token with permission to push to the repo. Generate one at https://github.com/settings/tokens/new?description=Sync%20Branch&scopes=repo.
+          token: ${{ github.token }}
+          # Whether to force the update or to make sure the update is a fast-forward update. Leaving this out or setting it to false will make sure you are not overwriting work.
+          force: true
   deploy:
     name: Deploy to GH Pages
     environment:

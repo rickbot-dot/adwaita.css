@@ -36,8 +36,10 @@ button:active {
    native dialogs) */
 
 dialog {
-  padding: 15x;
+  padding: 15px;
+  border: 0px;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px gray;
 }
 
 /* LibAdwaita-like check boxes */
@@ -116,3 +118,6 @@ dialog {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+/* LibAdwaita-like keyboard buttons: Make kbd element look real */
+kbd {

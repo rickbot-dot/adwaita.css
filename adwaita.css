@@ -12,10 +12,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
 
-/* Custom CSS */
-
-@import "adwaita-custom.css";
-
 /* Apply font, padding, other HTML body patches */
 
 body {

@@ -1,9 +1,8 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Post-Release Workflow
 
 on:
-  push:
-    branches: ["prod"]
+  release:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -17,8 +16,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
+  pullrequest:
+    name: Create Pull Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync branches
+        # You may pin to the exact commit or the version.
+        # uses: TreTuna/sync-branches@ea58ab6e406fd3ad016a064b31270bbb41127f41
+        uses: TreTuna/sync-branches@1.4.0
+        with:
+          GITHUB_TOKEN: ${{ github.token }}
+          FROM_BRANCH: main
+          TO_BRANCH: prod
+          PULL_REQUEST_TITLE: Sync development branch to production
+          PULL_REQUEST_BODY: |
+             Will update the `prod` branch (production branch designed for importing) to use
+             the current release contents.
+          CONTENT_COMPARISON: true
+          REVIEWERS: "['${{ github.repository_owner }}']"
   deploy:
+    name: Deploy to GH Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

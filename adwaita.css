@@ -121,3 +121,8 @@ dialog {
 
 /* LibAdwaita-like keyboard buttons: Make kbd element look real */
 kbd {
+  font-family: cantarell;
+  background-color: #CCCCCC;
+  border-radius: 5px;
+  padding: 10px;
+}

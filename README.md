@@ -1,7 +1,6 @@
 # Adwaita.css
 
-**TL;DR: This stylesheet mimics latest Adwaita (libadwaita style). See the [live demo](https://tylerms887.github.io/adwaita.css)
-to see results.**
+**TL;DR: This stylesheet mimics latest Adwaita (libadwaita style). See the [live demo](https://tylerms887.github.io/adwaita.css) to see results.**
 
 A stylesheet that makes native HTML elements look like they came straight from the GNOME desktop.
 

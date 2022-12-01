@@ -1,4 +1,4 @@
-# Adwaita.css
+# Adwaita.CSS: libadwaita for web applications
 
 **TL;DR: This stylesheet mimics latest Adwaita (libadwaita style). See the [live demo](https://tylerms887.github.io/adwaita.css) to see results.**
 

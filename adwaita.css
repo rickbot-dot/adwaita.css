@@ -5,6 +5,19 @@
 code, pre {
   font-family: "Red Hat Mono";
 }
+select {
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+  transition: background-color 0.5s,
+              color 0.5s;
+}
+@media (prefers-color-scheme: dark) {
+  select {
+    background-color: #5B5B5B;
+    color: white;
+  }
+}
 
 /* Apply font, padding, other HTML body patches */
 
@@ -80,6 +93,9 @@ dialog {
   border: 0px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px black;
+  transition: background-color 0.5s,
+              box-shadow 0.5s;
+              color 0.5s;
 }
 
 /* LibAdwaita-like check boxes */

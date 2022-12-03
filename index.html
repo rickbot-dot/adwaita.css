@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <title>Adwaita.CSS Live Demo</title>
-<style>@import "adwaita.css"</style>
+<style>
+@import "adwaita.css";
+@media (prefers-color-scheme: dark) {
+  dark-mode-info {
+    visibility: none;
+  }
+}
+</style>
 <body>
 
 <h1>Adwaita.CSS</h1>
 <p>These examples are in English. Adwaita.CSS should still work for other languages, but has not been tested.</p>
-<p><b>New:</b> Adwaita.CSS now has a dark mode. Turn on your system's dark mode to enable it.</p>
+<p id="dark-mode-info"><b>New:</b> Adwaita.CSS now has a dark mode. Turn on your system's dark mode to enable it.</p>
 <h2>Libadwaita Design Test</h2>
 <label class="container">Hi, I'm a checkbox!
   <input type="checkbox">

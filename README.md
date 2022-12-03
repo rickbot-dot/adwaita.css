@@ -19,7 +19,7 @@ See [Releases](https://github.com/TylerMS887/adwaita.css/releases) for instructi
 Add the following to your HTML `<head>`:
 
 ```html
-<style>@import url("https://raw.githubusercontent.com/TylerMS887/adwaita.css/main/adwaita.css");</style>
+<link rel="stylesheet" href="https://raw.githubusercontent.com/TylerMS887/adwaita.css/main/adwaita.css">
 ```
 
 This imports the current work on Adwaita.CSS. It is not recommended to deploy your website while targeting the `main` branch instead of a release.

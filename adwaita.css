@@ -11,6 +11,15 @@ code, pre {
 body {
   font-family: cantarell;
   padding: 10px;
+  transition: background-color 0.5s,
+              color 0.5s;
+}
+@media (prefers-color-scheme: dark) {
+  dialog {
+    background-color: #3A3A3A;
+    color: white;
+    box-shadow: 0px 0px 20px darkgray;
+  }
 }
 
 /* Dark mode */
@@ -24,13 +33,16 @@ body {
 
 /* LibAdwaita-like buttons */
 
+button {
+    transition: background-color 0.5s,
+                color 0.5s;
+}
 @media (prefers-color-scheme: light) {
  button {
   padding: 15px;
   border: none;
   border-radius: 7.5px;
   background-color: #e6e6e6;
-  transition: background-color 0.1s;
   font-family: cantarell;
  }
 
@@ -49,7 +61,6 @@ body {
   border-radius: 7.5px;
   background-color: #5B5B5B;
   color: white;
-  transition: background-color 0.1s;
   font-family: cantarell;
  }
  button:hover {
@@ -68,7 +79,7 @@ dialog {
   padding: 15px;
   border: 0px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px gray;
+  box-shadow: 0px 0px 20px black;
 }
 
 /* LibAdwaita-like check boxes */
@@ -154,4 +165,10 @@ kbd {
   background-color: #CCCCCC;
   border-radius: 5px;
   padding: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  kbd {
+    background-color: #5B5B5B;
+    color: white;
+  }
 }

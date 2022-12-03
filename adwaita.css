@@ -5,31 +5,84 @@
 code, pre {
   font-family: "Red Hat Mono";
 }
+select {
+  padding: 10px;
+  border: 0px;
+  border-radius: 10px;
+  transition: background-color 0.5s,
+              color 0.5s;
+}
+@media (prefers-color-scheme: dark) {
+  select {
+    background-color: #5B5B5B;
+    color: white;
+  }
+}
 
 /* Apply font, padding, other HTML body patches */
 
 body {
   font-family: cantarell;
   padding: 10px;
+  transition: background-color 0.5s,
+              color 0.5s;
+}
+@media (prefers-color-scheme: dark) {
+  dialog {
+    background-color: #3A3A3A;
+    color: white;
+    box-shadow: 0px 0px 20px darkgray;
+  }
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+   body {
+     background-color: #3A3A3A;
+     color: white;
+  }
 }
 
 /* LibAdwaita-like buttons */
 
 button {
+    transition: background-color 0.5s,
+                color 0.5s;
+}
+@media (prefers-color-scheme: light) {
+ button {
   padding: 15px;
   border: none;
   border-radius: 7.5px;
   background-color: #e6e6e6;
-  transition: background-color 0.1s;
   font-family: cantarell;
-}
+ }
 
-button:hover {
+ button:hover {
   background-color: #b0b0b0;
-}
+ }
 
-button:active {
+ button:active {
   background-color: #828282;
+ }
+}
+@media (prefers-color-scheme: dark) {
+ button {
+  padding: 15px;
+  border: none;
+  border-radius: 7.5px;
+  background-color: #5B5B5B;
+  color: white;
+  font-family: cantarell;
+ }
+ button:hover {
+  background-color: #3F3F3F;
+ }
+
+ button:active {
+  background-color: #2D2D2D;
+ }
 }
 
 /* LibAdwaita-like dialogues (only affects <dialog>, not JavaScript
@@ -39,7 +92,10 @@ dialog {
   padding: 15px;
   border: 0px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px gray;
+  box-shadow: 0px 0px 20px black;
+  transition: background-color 0.5s,
+              box-shadow 0.5s;
+              color 0.5s;
 }
 
 /* LibAdwaita-like check boxes */
@@ -125,4 +181,10 @@ kbd {
   background-color: #CCCCCC;
   border-radius: 5px;
   padding: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  kbd {
+    background-color: #5B5B5B;
+    color: white;
+  }
 }

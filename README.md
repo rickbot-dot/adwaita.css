@@ -6,6 +6,7 @@ A stylesheet that makes native HTML elements look like they came straight from t
 
 | ![image](https://user-images.githubusercontent.com/115214762/205485813-f236351b-03f8-4133-90a2-0de2f2ffd671.png) | ![image](https://user-images.githubusercontent.com/115214762/205485870-0544ed80-b7f6-49e0-afa8-f05fe063da8d.png) |
 | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Light theme                                                                                                      | Dark theme (added in 1.0)                                                                                        |
 
 
 [Bug reports/missing elements/etc](https://github.com/TylerMS887/adwaita.css/issues)

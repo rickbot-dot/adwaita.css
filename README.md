@@ -4,10 +4,8 @@
 
 A stylesheet that makes native HTML elements look like they came straight from the GNOME desktop.
 
-![Adwaita.CSS Live Demo (Light theme)](https://user-images.githubusercontent.com/115214762/205485813-f236351b-03f8-4133-90a2-0de2f2ffd671.png#gh-light-mode-only)
-![Adwaita.CSS Live Demo (Dark theme)](https://user-images.githubusercontent.com/115214762/205485870-0544ed80-b7f6-49e0-afa8-f05fe063da8d.png#gh-light-mode-only)
-![Adwaita.CSS Live Demo (Dark theme)](https://user-images.githubusercontent.com/115214762/205485870-0544ed80-b7f6-49e0-afa8-f05fe063da8d.png#gh-dark-mode-only)
-![Adwaita.CSS Live Demo (Light theme)](https://user-images.githubusercontent.com/115214762/205485813-f236351b-03f8-4133-90a2-0de2f2ffd671.png#gh-dark-mode-only)
+![Adwaita.CSS Live Demo](https://user-images.githubusercontent.com/115214762/205485813-f236351b-03f8-4133-90a2-0de2f2ffd671.png#gh-light-mode-only)
+![Adwaita.CSS Live Demo](https://user-images.githubusercontent.com/115214762/205485870-0544ed80-b7f6-49e0-afa8-f05fe063da8d.png#gh-dark-mode-only)
 
 [Bug reports/missing elements/etc](https://github.com/TylerMS887/adwaita.css/issues)
 

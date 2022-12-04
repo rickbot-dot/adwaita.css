@@ -8,7 +8,6 @@ A stylesheet that makes native HTML elements look like they came straight from t
 | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Light theme                                                                                                      | Dark theme (added in 1.0)                                                                                        |
 
-
 [Bug reports/missing elements/etc](https://github.com/TylerMS887/adwaita.css/issues)
 
 ## Install

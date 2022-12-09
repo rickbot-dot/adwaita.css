@@ -12,6 +12,7 @@ select {
   transition: background-color 0.5s,
               color 0.5s;
 }
+
 @media (prefers-color-scheme: dark) {
   select {
     background-color: #5B5B5B;

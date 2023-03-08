@@ -25,4 +25,10 @@ Add the following to your HTML `<head>`:
 <link rel="stylesheet" href="https://raw.githubusercontent.com/TylerMS887/adwaita.css/main/adwaita.css">
 ```
 
+A minimal (single line) version is also available:
+
+```html
+<link rel="stylesheet" href="https://raw.githubusercontent.com/TylerMS887/adwaita.css/main/adwaita.min.css">
+```
+
 This imports the current work on Adwaita.CSS. It is not recommended to deploy your website while targeting the `main` branch instead of a release.

@@ -3,6 +3,7 @@ name: Post-Release Workflow
 
 on:
   release:
+   types: [created]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -27,15 +28,24 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Upload styles
+      - name: Upload primary style
         # You may pin to the exact commit or the version.
-        # uses: NBTX/upload-release-assets@f68d1c91ca950f33ee35514883819c2bb053f487
-        uses: NBTX/upload-release-assets@v1
+        # uses: sekwah41/upload-release-assets@c567fc0fd9cbda3da23f1b498ee7f0446b649aed
+        uses: sekwah41/upload-release-assets@v1.1.0
         with:
-          # The URL for uploading assets to the release
+          # The URL for uploading assets to the release.
           upload_url: ${{ steps.get_release.outputs.upload_url }}
-          # A glob of assets to upload
-          targets: adwaita*.css
+          # The path to the asset you want to upload
+          asset_path: adwaita.css
+      - name: Upload mini style
+        # You may pin to the exact commit or the version.
+        # uses: sekwah41/upload-release-assets@c567fc0fd9cbda3da23f1b498ee7f0446b649aed
+        uses: sekwah41/upload-release-assets@v1.1.0
+        with:
+          # The URL for uploading assets to the release.
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
+          # The path to the asset you want to upload
+          asset_path: adwaita.min.css
   deploy:
     name: Deploy to GH Pages
     environment:

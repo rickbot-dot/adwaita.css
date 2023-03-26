@@ -16,6 +16,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  upload:
+    name: Upload assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get release URL
+        id: get_release
+        uses: bruceadams/get-release@v1.3.2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Upload styles
+        # You may pin to the exact commit or the version.
+        # uses: NBTX/upload-release-assets@f68d1c91ca950f33ee35514883819c2bb053f487
+        uses: NBTX/upload-release-assets@v1
+        with:
+          # The URL for uploading assets to the release
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
+          # A glob of assets to upload
+          targets: adwaita*.css
   deploy:
     name: Deploy to GH Pages
     environment:
@@ -23,12 +43,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Get release
-        id: get_release
-        uses: bruceadams/get-release@v1.3.2
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v2
@@ -40,12 +55,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-      - name: Upload Multiple Release Assets
-        # You may pin to the exact commit or the version.
-        # uses: NBTX/upload-release-assets@f68d1c91ca950f33ee35514883819c2bb053f487
-        uses: NBTX/upload-release-assets@v1
-        with:
-          # The URL for uploading assets to the release
-          upload_url: ${{ steps.get_release.outputs.upload_url }}
-          # A glob of assets to upload
-          targets: adwaita*.css

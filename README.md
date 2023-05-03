@@ -32,3 +32,9 @@ A minimal (single line) version is also available:
 ```
 
 This imports the current work on Adwaita.CSS. It is not recommended to deploy your website while targeting the `main` branch instead of a release.
+
+## Classes
+
+Adwaita.CSS requires some classes to style select elements. These classes are used by the stylesheet.
+
+* `checkmark`: This is used by the style to indicate checkboxes. See the code in [`index.html`](https://github.com/TylerMS887/adwaita.css/blob/main/index.html) for an example.

@@ -122,13 +122,15 @@ dialog {
 input[type="text"] {
     border: none;
     padding: 8px 0;
-    border-radius:
+    border-radius: 10px;
     font-size: 16px;
     color: #dedede;
+    padding-bottom: 5px;
 }
 
 input[type="text"]:focus {
     outline: none;
+    padding-bottom: 0;
     border-bottom: 5px solid #66afe9;
 }
 
